@@ -1,8 +1,14 @@
   # Trigger the workflow on push or pull request,
   # but only for the main branch
+
+on:
   push:
-    branches:
-      - master
+      branches:
+        - master
+      paths-ignore:
+        - '.github/**'
+      paths:
+        - '**.html'
   pull_request:
     branches:
       - master
