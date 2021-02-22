@@ -12,6 +12,9 @@ on:
   pull_request:
     branches:
       - master
+  tags:
+    - v1
+    - v1.*
 
 # Environment variables available to all jobs and steps in this workflow
 env:
