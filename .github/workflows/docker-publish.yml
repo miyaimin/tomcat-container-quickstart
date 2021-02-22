@@ -3,18 +3,19 @@
 
 on:
   push:
-      branches:
-        - master
-      paths-ignore:
-        - '.github/**'
+    branches:
+      - master
+    paths-ignore:
+      - '.github/**'
 #       paths:
 #         - '**.html'
+    tags:
+      - v1
+      - v1.*
   pull_request:
     branches:
       - master
-  tags:
-    - v1
-    - v1.*
+
 
 # Environment variables available to all jobs and steps in this workflow
 env:
